@@ -1,0 +1,49 @@
+<md-content layout-padding>
+    <div style="width : 50%; margin: 0 auto;">
+      <div layout-align="center center" layout="column">
+          <h3 class="md-title">Please Leave Your Contact Information</h3>
+      </div>
+      <form name="messageEntry">
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>First Name</label>
+            <input ng-model="message.firstname">
+          </md-input-container>
+
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Last Name</label>
+            <input ng-model="message.lastname">
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Types Of Messages</label>
+            <md-select ng-model="message.type">
+              <md-option ng-repeat="message in messages" >
+                {{message}}
+              </md-option>
+            </md-select>
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Message</label></label>
+            <input ng-model="message.details">
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>Email</label>
+            <input ng-model="message.email">
+          </md-input-container>
+        </div>
+
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+          <md-button ng-click="submit(message)" class="md-raised">SUBMIT</md-button>
+        </section>
+      </form>
+    </div>
+  </md-content>

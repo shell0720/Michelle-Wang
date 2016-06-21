@@ -1,0 +1,50 @@
+.menu-demo-container {
+  background: #add;
+}
+/*
+#background {
+position: relative;
+ width: 100%;
+ height: auto;
+ opacity: 0.7;
+}*/
+
+.homeBackground {
+ background: url("http://previews.123rf.com/images/iloveotto/iloveotto1109/iloveotto110900220/10510265-world-map-vintage-artwork-perfect-background-with-space-for-text-or-image-Stock-Photo.jpg") repeat;
+ width: 100%;
+ height: auto;
+ border: 2px solid black;
+
+}
+
+.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.transbox h1 {
+  margin: 5%;
+   font-weight: bold;
+   color: #000000;
+}
+
+.transbox h2 {
+  margin: 5%;
+   font-weight: bold;
+   color: #000000;
+}
+
+#navbar {
+  background: yellow;
+}
+
+main {
+  border: 0;
+}
+
+a {
+  color: white;
+}
